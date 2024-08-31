@@ -17,7 +17,7 @@ The term "single-port" comes from the fact that this type of RAM has only one da
 # Working Principle
 The single-port memory module operates on the rising edge of the clock signal. If a write operation is in progress (signaled by the we control signal), the data at the specified address is updated. If a read operation is in progress (signaled by the absence of the we control signal), the data from the specified address is loaded into a temporary register.
 The data output is controlled by the oe (output enable) control signal. If output is enabled and no write operation is in progress, the data from the temporary register is output.
-# ASIC Design Flow: Implementation of this Project from RTL to GDS II
+# ASIC Design Flow:Implementation of this Project from RTL to GDSII
 #Content Overview
 1. RTL Design
 2. RTL Simulation
@@ -28,5 +28,6 @@ The data output is controlled by the oe (output enable) control signal. If outpu
        Placement & Place Opt
        Clock Tree Synthesis & CTS Opt
        Routing & Route Opt
+#    
 
    
