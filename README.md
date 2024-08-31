@@ -1,7 +1,7 @@
 # Physical-Design-of-Single-Port-RAM
 This repository contains materials related to the RTL to GDS flow and single-port memory.
 # Abstract:
-This project aims to comprehensively understand the RTL (Register Transfer Level) to GDS (Graphic Data System) flow, a critical process in digital circuit design. The project covers every flow step, from RTL design using hardware description languages, synthesis to gate-level representations, placement, and routing, to the final GDSII file generation. A significant portion of the project is dedicated to discussing the concept and theory of memory, with a particular focus on single-port memory.
+This project aims to comprehensively understand the RTL (Register Transfer Level) to GDS (Graphic Data System) flow, a critical process in digital circuit design. The project covers every flow step, from RTL design using hardware description languages, and synthesis to gate-level representations, placement, and routing, to the final GDSII file generation. A significant portion of the project is dedicated to discussing the concept and theory of memory, with a particular focus on single-port memory.
 # Contents
 1. Single-Port Memory:
 2. ASIC Flow (RTL to GDS Flow):
@@ -17,7 +17,7 @@ The term "single-port" comes from the fact that this type of RAM has only one da
 # Working Principle
 The single-port memory module operates on the rising edge of the clock signal. If a write operation is in progress (signaled by the we control signal), the data at the specified address is updated. If a read operation is in progress (signaled by the absence of the we control signal), the data from the specified address is loaded into a temporary register.
 The data output is controlled by the oe (output enable) control signal. If output is enabled and no write operation is in progress, the data from the temporary register is output.
-# ASIC Design Flow:Implementation of this Project from RTL to GDSII
+# ASIC Design Flow: Implementation of this Project from RTL to GDSII
 #Content Overview
 1. RTL Design
 2. RTL Simulation
@@ -58,7 +58,7 @@ This involves building a clock distribution network (clock tree) across the chip
 The final step involves connecting the components with wires (routing) and optimizing the wire paths to minimize delays and other issues.
 
 # Final Result of the Flow:
-Below attached are the screenshots of the final layout before and after translating the GDS stream file into Cadence Virtuoso
+Final layout before and after translating the GDS stream file into Cadence Virtuoso.
 ![Screenshort 14-01-2024](https://github.com/user-attachments/assets/fc55efb8-58c9-4592-b79c-dee55d0fe4e4)
 ![Screenshort 15-01-2024](https://github.com/user-attachments/assets/842bef5f-9efc-4cd0-b978-baf4739d71be)
 
