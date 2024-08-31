@@ -30,10 +30,45 @@ The data output is controlled by the oe (output enable) control signal. If outpu
        Routing & Route Opt
 # Let's get started
 RTL Design: Understand how we converted the project specifications into RTL code using Verilog/VHDL.
-For a details understanding of the design (Follow this)
 RTL Simulation: Understand how we simulated the RTL code to verify the design functionality.
 ![Screenshot from 10-01-2024](https://github.com/user-attachments/assets/226160e7-fd16-4dac-a566-7fbc19218f56)
 Logic Synthesis: Discover how we synthesized the RTL code into a gate-level netlist.
+
+# Here is the graphical view:
+![syn_img](https://github.com/user-attachments/assets/8884cf0b-8953-4613-b21b-4e2a0b206cc3)
+Physical Design: Delve into the Place and Route process and how we created the final GDSII file.
+
+# ASIC Physical Design Flow:
+Welcome to our comprehensive guide on ASIC Physical Design Flow, also known as Netlist to GDSII Flow or PNR Flow. This guide is perfect for those who want to understand the practical aspects of chip creation.
+# Let's get started
+Design Import: This is the initial phase where the design data is imported into the physical design tools. When importing a design into Cadence Innovus, the following files are required:
+1. Design Netlist File (Verilog): This file is created after the synthesis process and can either be generated using CADENCE Genus. Generally, it is a Modified Netlist, because I have to instantiate IOpad cells to the input and output port.
+2. Physical Library Files (LEF Files): There are three kinds of LEF files required which are:
+      Technology LEF File: This file contains information about the Metal layers, Vias, design rules, etc. for a certain technology.
+      Standard Cell LEF File: This file contains the physical view of the standard cells of the current technology.
+      IO Cell LEF File: This file contains the physical view of the IO cells, corner cells, IO fillers of the current technology.
+
+# Floorplan (includes Powerplan): 
+In this step, the layout of the chip is planned, including the placement of blocks and the power distribution network.
+# Placement & Place Opt: 
+After floorplanning, the components of the design are placed onto the layout, and their positions are optimized for performance and other factors.
+# Clock Tree Synthesis & CTS Opt: 
+This involves building a clock distribution network (clock tree) across the chip and optimizing it to ensure that all elements receive the clock signal on time, and check.
+# Routing & Route Opt: 
+The final step involves connecting the components with wires (routing) and optimizing the wire paths to minimize delays and other issues.
+
+# Final Result of the Flow:
+Below attached are the screenshots of the final layout before and after translating the GDS stream file into Cadence Virtuoso
+![Screenshort 14-01-2024](https://github.com/user-attachments/assets/fc55efb8-58c9-4592-b79c-dee55d0fe4e4)
+![Screenshort 15-01-2024](https://github.com/user-attachments/assets/842bef5f-9efc-4cd0-b978-baf4739d71be)
+
+
+
+
+   
+
+
+
 
 
    
