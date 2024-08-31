@@ -2,7 +2,7 @@
 This repository contains materials related to the RTL to GDS flow and single-port memory.
 # Abstract:
 This project aims to comprehensively understand the RTL (Register Transfer Level) to GDS (Graphic Data System) flow, a critical process in digital circuit design. The project covers every flow step, from RTL design using hardware description languages, synthesis to gate-level representations, placement, and routing, to the final GDSII file generation. A significant portion of the project is dedicated to discussing the concept and theory of memory, with a particular focus on single-port memory.
-# Contennts
+# Contents
 1. Single-Port Memory:
 2. ASIC Flow (RTL to GDS Flow):
 
@@ -29,8 +29,8 @@ The data output is controlled by the oe (output enable) control signal. If outpu
        Clock Tree Synthesis & CTS Opt
        Routing & Route Opt
 # Let's get started
-RTL Design: Understand how we converted the project specifications into RTL code using Verilog/VHDL.
-RTL Simulation: Understand how we simulated the RTL code to verify the design functionality.
+# RTL Design: Understand how we converted the project specifications into RTL code using Verilog/VHDL.
+@ RTL Simulation: Understand how we simulated the RTL code to verify the design functionality.
 ![Screenshot from 10-01-2024](https://github.com/user-attachments/assets/226160e7-fd16-4dac-a566-7fbc19218f56)
 Logic Synthesis: Discover how we synthesized the RTL code into a gate-level netlist.
 
