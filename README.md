@@ -28,6 +28,11 @@ The data output is controlled by the oe (output enable) control signal. If outpu
        Placement & Place Opt
        Clock Tree Synthesis & CTS Opt
        Routing & Route Opt
-#    
+# Let's get started
+RTL Design: Understand how we converted the project specifications into RTL code using Verilog/VHDL.
+RTL Simulation: Understand how we simulated the RTL code to verify the design functionality.
+![Screenshot from 10-01-2024](https://github.com/user-attachments/assets/226160e7-fd16-4dac-a566-7fbc19218f56)
+Logic Synthesis: Discover how we synthesized the RTL code into a gate-level netlist.
+
 
    
