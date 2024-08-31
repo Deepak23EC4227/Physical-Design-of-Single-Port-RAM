@@ -44,9 +44,9 @@ Welcome to our comprehensive guide on ASIC Physical Design Flow, also known as N
 Design Import: This is the initial phase where the design data is imported into the physical design tools. When importing a design into Cadence Innovus, the following files are required:
 1. Design Netlist File (Verilog): This file is created after the synthesis process and can either be generated using CADENCE Genus. Generally, it is a Modified Netlist, because I have to instantiate IOpad cells to the input and output port.
 2. Physical Library Files (LEF Files): There are three kinds of LEF files required which are:
-      Technology LEF File: This file contains information about the Metal layers, Vias, design rules, etc. for a certain technology.
-      Standard Cell LEF File: This file contains the physical view of the standard cells of the current technology.
-      IO Cell LEF File: This file contains the physical view of the IO cells, corner cells, IO fillers of the current technology.
+       1. Technology LEF File: This file contains information about the Metal layers, Vias, design rules, etc. for a certain technology.
+       2. Standard Cell LEF File: This file contains the physical view of the standard cells of the current technology.
+       3. IO Cell LEF File: This file contains the physical view of the IO cells, corner cells, IO fillers of the current technology.
 
 # Floorplan (includes Powerplan): 
 In this step, the layout of the chip is planned, including the placement of blocks and the power distribution network.
