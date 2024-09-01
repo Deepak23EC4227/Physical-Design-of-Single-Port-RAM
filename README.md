@@ -52,14 +52,13 @@ Welcome to our comprehensive guide on ASIC Physical Design Flow, also known as N
        2. Standard Cell LEF File: This file contains the physical view of the standard cells of the current technology.
        3. IO Cell LEF File: This file contains the physical view of the IO cells, corner cells, IO fillers of the current technology.
 
-# Floorplan (includes Powerplan): 
-In this step, the layout of the chip is planned, including the placement of blocks and the power distribution network.
-# Placement & Place Opt: 
-After floorplanning, the components of the design are placed onto the layout, and their positions are optimized for performance and other factors.
-# Clock Tree Synthesis & CTS Opt: 
-This involves building a clock distribution network (clock tree) across the chip and optimizing it to ensure that all elements receive the clock signal on time, and check.
-# Routing & Route Opt: 
-The final step involves connecting the components with wires (routing) and optimizing the wire paths to minimize delays and other issues.
+**Floorplan(includes Powerplan):** In this step, the layout of the chip is planned, including the placement of blocks and the power distribution network.
+
+**Placement & Place Opt:** After floorplanning, the components of the design are placed onto the layout, and their positions are optimized for performance and other factors.
+
+**Clock Tree Synthesis & CTS Opt:** This involves building a clock distribution network (clock tree) across the chip and optimizing it to ensure that all elements receive the clock signal on time, and check.
+
+**Routing & Route Opt:** The final step involves connecting the components with wires (routing) and optimizing the wire paths to minimize delays and other issues.
 
 # Final Result of the Flow:
 Final layout before and after translating the GDS stream file into Cadence Virtuoso.
